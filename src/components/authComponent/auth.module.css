@@ -1,0 +1,62 @@
+#authSection{
+    background-color: #333333ba;
+}
+
+.authArticle{
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.formBlock{
+    background: #111;
+    padding: 20px;
+    border-bottom: 3px solid #ffc107;
+    border-radius: 6px;
+    width: 60%;
+}
+.formLabel{
+    display: block;
+    padding: 5px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.formControl{
+    width: 100%;
+    border: 1px solid #444;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border-radius: 6px;
+    background-color: #444;
+    border: none;
+    outline:invert;
+    color: #fff ;
+}
+.formControl:focus{
+    outline-color: #ffc107;
+    outline-style:inset;
+}
+.btn{
+    width: 100%;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ffc107;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 15px 0;
+    border: 1px solid #ffc107;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: all 0.5s;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #111;
+    border: 1px solid #ffc107;
+    transform: translate(0.10%);
+}

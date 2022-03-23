@@ -1,0 +1,45 @@
+#videoBlock {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+}
+.videoBlockPlayer {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.5);  
+}
+
+#videoDesc{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 50%; 
+  padding: 0px 120px; 
+  /* left: 91px;
+    position: absolute;
+    top: 400px; */
+}
+
+.videoPlay{
+  font-size: 40px;
+    margin: 0px 20px 0 0;
+    
+}
+
+.videoAside{
+    display: flex;
+    height: 60px;
+    align-items:center;
+    background: #9e9e9e2e;
+    width: 28%;
+    padding: 5px;
+    justify-content: center;
+    margin: 16px 10px;
+    border-radius: 8px;
+}
