@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Styles from "./auth.module.css";
 import { toast } from "react-toastify";
 import { auth } from "../../apis/firebase";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, sendEmailVerification ,updateProfile } from "firebase/auth";
 
 const SignUp = () => {
+  let redirect =useNavigate()
   let [username, setUsername] = useState("");
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
@@ -25,7 +27,16 @@ const SignUp = () => {
           password
         );
         toast.success("succesfully Registered");
+        let confirmationMail = `verification mail has been send to ${email} address and verify`;
         console.log(userData);
+        let user = userData.user
+          sendEmailVerification(userData.user)
+          updateProfile(user, {
+            photoURL :"https://png.pngtree.com/png-clipart/20190516/original/pngtree-users-vector-icon-png-image_3725294.jpg",
+            displayName:username,
+          });
+          redirect("/login")
+          toast.info(confirmationMail)
       }
     } catch (err) {
       console.log(err);

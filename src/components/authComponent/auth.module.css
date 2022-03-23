@@ -60,3 +60,25 @@
     border: 1px solid #ffc107;
     transform: translate(0.10%);
 }
+
+.eyeIcon{
+    position: relative;
+}
+.eyeIconSVG{
+    position: absolute;
+    left: -32px;
+    top: 3px;
+    font-size: 21px;
+    color: #ffc107;
+}
+
+.gotoAuth{
+  float: right;
+  font-size: 13px;
+
+}
+.gotoAuthLink{
+    color: #ffc107;
+    font-weight: bold;
+    padding: 0 4px;
+}
