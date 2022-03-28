@@ -75,10 +75,16 @@
 .gotoAuth{
   float: right;
   font-size: 13px;
+  padding: 0px 11px;
 
 }
 .gotoAuthLink{
     color: #ffc107;
+    font-size: 13px;
     font-weight: bold;
     padding: 0 4px;
+}
+.gotoAuthLink:hover{
+    color: #fff;
+    transition: ease all 0.4s;
 }

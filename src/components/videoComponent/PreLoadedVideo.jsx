@@ -20,7 +20,7 @@ const PreLoadedVideo = () => {
   return (
     <section id={Styles.videoBlock}>
       <div id={Styles.videoDesc} >
-        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Streming latest movies.</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
           dolore in pariatur. Magni, dolorum inventore!

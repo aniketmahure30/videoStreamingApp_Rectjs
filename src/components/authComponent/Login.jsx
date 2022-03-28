@@ -47,6 +47,12 @@ const Login = () => {
         <h2 style={{ padding: "20px 0" }}>Sign In</h2>
         <div className={Styles.formBlock}>
           <form onSubmit={handleSubmit}>
+          <div className="form-group" style={{display:"block", }}>
+              <Link to="/phone-auth" className={Styles.gotoAuthLink}>
+                Login with Number
+              </Link>
+          </div>
+
             <div className="form-group">
               <label htmlFor="" className={Styles.formLabel}>
                 email
@@ -89,6 +95,11 @@ const Login = () => {
                 Signup
               </Link>
             </p>
+          </div>
+          <div className="form-group" style={{display:"block", }}>
+              <Link to="/password-reset" className={Styles.gotoAuthLink}>
+                Forgot password
+              </Link>
           </div>
         </div>
       </article>

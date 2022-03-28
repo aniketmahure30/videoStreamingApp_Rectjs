@@ -1,0 +1,120 @@
+.profileBlock{
+    background-color: #7777;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebarBlock{
+    flex-basis: 20%;
+    border-right: 1px #cccccca8 solid;
+    background-color: #111;
+    padding: 10px;
+}
+
+.sidebarMenu ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.sidebarMenu ul li a{
+     text-decoration: none;
+     text-transform: capitalize;
+     color: #ffc107;
+     border-left: 2px solid #ffc107;
+     background: #3333336e;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     margin: 4px 0;
+     font-size: 14px;
+}
+
+.sidebarMenu ul li a:hover{
+    border-right: 11px solid #ffc10788;
+    background: #ffc10728;
+    transition: ease-in 0.2s ;
+    font-weight: bold;
+    color: #fff;
+    border-top-right-radius: 50px;
+    /* border-bottom-right-radius: 50px; */
+}
+
+.sidebarMenu svg{
+    color: #fff;
+    margin: -1px 4px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 1px;
+}
+
+.mainProfile{
+    flex-basis: 80%;
+    padding: 10px;
+    
+}
+.photoURL{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    height: 300px;
+}
+
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    /* text-transform: capitalize; */
+
+}
+
+.photoURL img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+
+}
+
+
+/* uplaod camera Icon photo */
+
+
+.asideIcon{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+    
+}
+
+.asideIcon main{
+    position: absolute;
+    background: #ffc107;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;;
+    cursor: pointer;
+    transition: ease all 0.6s;
+}
+
+.asideIcon:hover main{
+    opacity: 1;
+}
+
+.asideIcon a{
+    color: #fff;
+}
